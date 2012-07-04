@@ -1,0 +1,131 @@
+<!--
+
+MITOSIS.JS DEMO
+v0.1 Test Version
+
+by Tianhe Yang
+May 17, 2012
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8" />
+	
+	<!-- Fluid layout calculations -->
+	<link href="css/fluid.css" media="all" rel="stylesheet" type="text/css" />
+	
+	<!-- Import order -->
+	<script src="js/jquery-1.7.2.min" type="text/javascript"></script>
+	<script src="js/mitosis.js" type="text/javascript"></script>
+	<script src="js/sizings.js" type="text/javascript"></script>
+	
+	<!-- Your custom styles -->
+	<style type="text/css">
+		/* CSS Resets */
+		*{
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-size: 80%;
+			font-family: sans-serif;
+			padding: 40px 0 30px 0;
+		}
+		.column {
+			margin-bottom: 20px;
+		}
+		.column p {
+			background: #ffb200;
+			color: black;
+			text-align: center;
+			padding: 10px 0;
+		}
+	</style>
+	
+	<title>Fluid, style-independent grid layout.</title>
+	
+</head>
+
+<body>
+
+<div class="container" id="example1">
+	<div class="row">
+		<div class="column">
+			<p>Three columns</p>
+		</div>
+		<div class="column">
+			<p>Nine columns</p>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="example2">
+	<div class="row">
+		<div class="column">
+			<p>Four columns</p>
+		</div>
+		<div class="column">
+			<p>Four columns</p>
+		</div>
+		<div class="column">
+			<p>Four columns</p>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="example3">
+	<div class="row">
+		<div class="column">
+			<p>Two columns</p>
+		</div>
+		<div class="column">
+			<p>Two columns</p>
+		</div>
+		<div class="column">
+			<p>Two columns</p>
+		</div>
+		<div class="column">
+			<p>Two columns</p>
+		</div>
+		<div class="column">
+			<p>Two columns</p>
+		</div>
+		<div class="column">
+			<p>Two columns</p>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="example4">
+	<div class="row">
+		<div class="column">
+			<p>Three columns</p>
+		</div>
+		<div class="column">
+			<p>Four columns</p>
+		</div>
+		<div class="column">
+			<p>Five columns</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<p>Three columns</p>
+		</div>
+		<div class="column">
+			<p>Four columns</p>
+		</div>
+		<div class="column">
+			<p>Five columns</p>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

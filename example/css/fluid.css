@@ -1,0 +1,101 @@
+/**
+
+Fluid Grid for Mitosis.js
+Based on the 1140 Grid by Andy Taylor (http://andytaylor.me/)
+This fluid grid is licensed under a Creative Commons Attribution 3.0 Australia License (http://creativecommons.org/licenses/by/3.0/au/).
+
+**/
+
+.container {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.row {
+	width: 100%;
+	max-width: 1200px;
+	min-width: 687px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+	margin-right: 2.5%;
+	float: left;
+	min-height: 1px;
+}
+.row .onecol {
+	width: 6.041666667%;
+}
+.row .twocol {
+	width: 14.5833333%;
+}
+.row .threecol {
+	width: 23.125%;
+}
+.row .fourcol {
+	width: 31.6666667%;
+}
+.row .fivecol {
+	width: 40.2083333%;
+}
+.row .sixcol {
+	width: 48.75%;
+}
+.row .sevencol {
+	width: 57.2916667%;
+}
+.row .eightcol {
+	width: 65.8333334%;
+}
+.row .ninecol {
+	width: 74.375%;
+}
+.row .tencol {
+	width: 82.9166667%;
+}
+.row .elevencol {
+	width: 91.4583334%;
+}
+.row .twelvecol, .header {
+	width: 100%;
+	float: left;
+}
+.last {
+	margin-right: 0px;
+}
+img, object, embed {
+	max-width: 100%;
+}
+img {
+	height: auto;
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 1023px) {
+	body {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+	body {
+		font-size: 16px;
+		-webkit-text-size-adjust: none;
+	}
+	.row, body, .container {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
